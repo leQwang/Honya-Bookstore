@@ -1,0 +1,103 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Le Duy Quang
+ID: 3912105
+Acknowledgement: RMIT lecture slide -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="shortcut icon" href="./Asset/Honya Bookstore Favicon.png" type="image/x-icon">
+    <title>Contact Us</title>
+</head>
+<body>
+    <div class="headerDesktop border">
+        <img src="./Asset/Honya Bookstore Logo 4.png" alt="Honya Bookstore Logo" id="headerLogo">
+        <div class="mobileNavIcon">☰</div>
+        <div class="navbar">
+            <a class="navAnchor hover" href="index.html">Home</a>
+            <a class="navAnchor hover" href="#">Fiction</a>
+            <a class="navAnchor hover" href="#">Non-Fiction</a>
+            <a class="navAnchor hover" href="#">Children</a>
+        </div>
+    </div>
+
+    <main>
+        <div class="contactContainer border">
+            <h1>Contact Us</h1>
+            <form action="#" method="POST">
+                <div class="formSection mobileInput">
+                    <label for="supportType">Support needed:</label>
+                    <select name="supportType" id="supportType">
+                        <option>I want to sell books</option>
+                        <option>I want to buy books</option>
+                    </select>
+                </div>
+
+                <div class="formSection mobileInput">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <div class="formSection mobileInput">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="emailAddress">
+                </div>
+
+                <div class="formSection mobileInput">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phoneNumber">
+                </div>
+
+                <div class="formSection">
+                    <span>Contact Preference:</span>
+                    <input type="checkbox" id="emailMethod" name="contactEmail" value="emailValue">
+                    <label for="emailMethod">Email</label>
+
+                    <input type="checkbox" id="phoneMethod" name="contactPhone" value="phoneValue">
+                    <label for="phoneMethod">Phone</label>
+                </div>
+
+                <div class="formSection">
+                    <span>Subscribe Weekly Newsletter:</span>
+
+                    <input type="radio" id="yesNewsletter" name="newsletter" value="yes" checked>
+                    <label for="yesNewsletter">Yes</label>
+
+                    <input type="radio" id="noNewsletter" name="newsletter" value="no">
+                    <label for="noNewsletter">No</label>
+                </div>
+
+                <div class="formSection">
+                    <label for="extraNotes">Extra Notes:</label>
+                    <textarea id="extraNotes" name="extraNotes"></textarea>
+                </div>
+
+                <div class="formSection buttonDisplay">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <nav class="footerNav">
+            <a class="footerAnchor border" href="#">About Us</a>
+            <a class="footerAnchor border" href="#">Privacy Policy</a>
+            <a class="footerAnchor border" href="#">Terms</a>
+            <a class="footerAnchor border" href="#">Copyright</a>
+            <a class="footerAnchor border" href="contact.html">Contact Us</a>
+        </nav>
+        <p class="copyright">&copy; 2023 Honya BookStore</p>
+    </footer>
+</body>
+</html>
