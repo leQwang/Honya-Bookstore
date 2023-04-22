@@ -25,7 +25,7 @@ body{
 .headerDesktop{
     display: flex;
     overflow: hidden;
-    background-color: #E5DAD8;
+    background-color: #efe8e6;
     justify-content: space-around;
     width: 80%;
     margin: 10px auto;
