@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
 body{
     margin: 0 0;
     position: relative;
@@ -5,11 +7,11 @@ body{
 }
 
 .border{
-    border: 3px solid black;
+    border: 3px solid #857061;
 }
 
 .hover:hover{
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid #857061;
 }
 
 .mobileNavIcon{
@@ -116,7 +118,6 @@ body{
         display: block;
     }
 
-
 }
 
 /* ------------------------------------ */
@@ -154,16 +155,34 @@ body{
 
 .bookChildWidth{
     width: 95%;
-    padding: 0 5px;
+    padding: 0 2.5%;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 120%;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 20%;
+    width: 60%;
+    font-size: 70%;
+    height: 600px;
+}
+
+.video p{
+    font-size: x-large;
+    text-decoration: underline black;
 }
 
 @media (max-width: 960px){
     .welcomeText{
-        font-size: 5vw;
+        font-size: 150%;
     }
     .categoriesTitle{
-        font-size: 3vw;
+        font-size: 70%;
     }
 }
 
@@ -174,7 +193,11 @@ body{
     .categoriesContainer{
         width: 50%;
     }
-}
+    .video{
+        height: 300px;
+        margin-bottom: 3rem;
+    }
+}   
 
 /* --------------------------------------- */
 main{
@@ -187,8 +210,6 @@ footer{
     background-color: black;
     justify-content: space-around;
     flex-direction: column;
-    /* position: relative;
-    bottom: 0; */
     position: absolute;
     bottom: 0;
     width: 100%;

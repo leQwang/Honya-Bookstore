@@ -5,11 +5,11 @@ body{
 }
 
 .border{
-    border: 3px solid black;
+    border: 3px solid #857061;
 }
 
 .hover:hover{
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid #857061;
 }
 
 .mobileNavIcon{
@@ -115,8 +115,11 @@ body{
     .navbar:hover{
         display: block;
     }
-
-
+}
+@media (max-width: 425px){
+    #headerLogo{
+        width: 60%;
+    }
 }
 
 /* ------------------------------------ */
@@ -156,6 +159,15 @@ body{
     width: 95%;
     padding: 0 5px;
     text-align: center;
+}
+
+@media (max-width: 960px){
+    .welcomeText{
+        font-size: 190%;
+    }
+    .categoriesTitle{
+        font-size: 70%;
+    }
 }
 
 @media (max-width: 768px){

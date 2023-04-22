@@ -5,11 +5,11 @@ body{
 }
 
 .border{
-    border: 3px solid black;
+    border: 3px solid #857061;
 }
 
 .hover:hover{
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid #857061;
 }
 
 .mobileNavIcon{
@@ -188,8 +188,8 @@ body{
 
 .buttonAddCart{
     margin: 2vw;
-    width: 15vw;
-    height: 3vw;
+    width: 50%;
+
     background-color: #FF424E;
     color: black;
     font-size: 2vw;
@@ -199,14 +199,14 @@ body{
     margin: 1% 20% 2vw 20%;
 }
 
-/* .bookInfo h1{
-    font-size: 1.2vw;
+.bookInfo h1{
     padding: 1vw;
-} */
+}
 
-.bookDetail{
+.bookDescription{
     font-size: 120%;
     padding: 0 1vw 1vw 1vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 @media (max-width: 960px) {
