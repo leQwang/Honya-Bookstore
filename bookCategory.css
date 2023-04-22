@@ -6,10 +6,12 @@ body{
 
 .border{
     border: 3px solid #857061;
+    border-radius: 10px;
 }
 
 .hover:hover{
-    border-bottom: 5px solid #857061;
+    border-bottom: 3px solid #857061;
+    transition: 0.1s;
 }
 
 .mobileNavIcon{
@@ -34,15 +36,6 @@ body{
     width: 20%;
 }
 
-.title{
-    align-self: center;
-    text-align: center;
-    font-size: 70px;
-    width: 50%;
-    font-weight: bold;
-    padding: 0 0;
-}
-
 .navbar{
     display: flex;
     padding: 0;
@@ -51,8 +44,6 @@ body{
 
     align-self: flex-end;
     flex-wrap: nowrap;
-    overflow: visible;
-
 }
 
 .navAnchor{
@@ -64,7 +55,7 @@ body{
     text-decoration: none;
     color: black;
     text-align: center;
-    font-size: calc(9px + 0.8vw);
+    font-size: calc(9px + 1vw);
     line-height: calc(2em + 0.8vw);
     width: 100%;
 }
@@ -126,7 +117,8 @@ body{
 
 .welcomeText{
     text-align: center;
-    font-size: 3vw;
+    font-size: 300%;
+    color: red;
 }
 
 .subCategoriesContainer{
@@ -135,12 +127,14 @@ body{
     flex-direction: column;
     width: 70%;
     margin: 20px auto;
+    box-shadow: 10px 10px 5px #aaaaaa;
 }
 
-.subCategoriesTitle{
+.subCategoriesContainer h1{
     text-align: center;
     text-decoration: none;
-    font-size: 90%;
+    font-size: 200%;
+    font-weight: 500;
 }
 
 .subCategories{
@@ -157,8 +151,10 @@ body{
 
 .bookChildWidth{
     width: 95%;
-    padding: 0 5px;
+    padding: 0 2.5%;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
 }
 
 @media (max-width: 960px){
@@ -174,6 +170,7 @@ body{
     .subCategories{
         flex-wrap: wrap;
     }
+
 }
 
 /* --------------------------------------- */
@@ -220,6 +217,13 @@ footer{
     align-items: center;
     justify-content: center;
 }
+
+.footerAnchor:hover{
+    background-color: white;
+    color: black;
+    transition: 0.2s;
+}
+
 
 .copyright{
     text-decoration: none;

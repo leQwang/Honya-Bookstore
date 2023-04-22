@@ -8,10 +8,12 @@ body{
 
 .border{
     border: 3px solid #857061;
+    border-radius: 10px;
 }
 
 .hover:hover{
-    border-bottom: 5px solid #857061;
+    border-bottom: 3px solid #857061;
+    transition: 0.1s;
 }
 
 .mobileNavIcon{
@@ -36,15 +38,6 @@ body{
     width: 20%;
 }
 
-.title{
-    align-self: center;
-    text-align: center;
-    font-size: 70px;
-    width: 50%;
-    font-weight: bold;
-    padding: 0 0;
-}
-
 .navbar{
     display: flex;
     padding: 0;
@@ -53,8 +46,6 @@ body{
 
     align-self: flex-end;
     flex-wrap: nowrap;
-    overflow: visible;
-
 }
 
 .navAnchor{
@@ -66,7 +57,7 @@ body{
     text-decoration: none;
     color: black;
     text-align: center;
-    font-size: calc(9px + 0.8vw);
+    font-size: calc(9px + 1vw);
     line-height: calc(2em + 0.8vw);
     width: 100%;
 }
@@ -125,6 +116,7 @@ body{
 .welcomeText{
     text-align: center;
     font-size: 3vw;
+    color: rgb(142, 12, 142);
 }
 
 .categoriesContainer{
@@ -133,12 +125,17 @@ body{
     flex-direction: column;
     width: 70%;
     margin: 20px auto;
+    box-shadow: 10px 10px 5px #aaaaaa;
 }
 
 .categoriesTitle{
     text-align: center;
     text-decoration: none;
-    font-size: 90%;
+}
+
+.categoriesTitle h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 200%;
 }
 
 .categories{
@@ -158,8 +155,7 @@ body{
     padding: 0 2.5%;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-weight: 600;
-    font-size: 120%;
+    font-size: 130%;
 }
 
 .video{
@@ -174,6 +170,8 @@ body{
 
 .video p{
     font-size: x-large;
+    color: red;
+    font-weight: 600;
     text-decoration: underline black;
 }
 
@@ -189,9 +187,6 @@ body{
 @media (max-width: 768px){
     .categories{
         flex-wrap: wrap;
-    }
-    .categoriesContainer{
-        width: 50%;
     }
     .video{
         height: 300px;
@@ -240,6 +235,12 @@ footer{
     flex-grow: 4;
     align-items: center;
     justify-content: center;
+}
+
+.footerAnchor:hover{
+    background-color: white;
+    color: black;
+    transition: 0.2s;
 }
 
 .copyright{

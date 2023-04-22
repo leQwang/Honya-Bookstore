@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Sacramento&display=swap');
+
 body{
     margin: 0 0;
     position: relative;
@@ -9,7 +11,8 @@ body{
 }
 
 .hover:hover{
-    border-bottom: 5px solid #857061;
+    border-bottom: 3px solid #857061;
+    transition: 0.1s;
 }
 
 .mobileNavIcon{
@@ -20,8 +23,6 @@ body{
     padding: 5px;
     display: none;
 } 
-
-
 
 .headerDesktop{
     display: flex;
@@ -36,15 +37,6 @@ body{
     width: 20%;
 }
 
-.title{
-    align-self: center;
-    text-align: center;
-    font-size: 70px;
-    width: 50%;
-    font-weight: bold;
-    padding: 0 0;
-}
-
 .navbar{
     display: flex;
     padding: 0;
@@ -53,8 +45,6 @@ body{
 
     align-self: flex-end;
     flex-wrap: nowrap;
-    overflow: visible;
-
 }
 
 .navAnchor{
@@ -66,7 +56,7 @@ body{
     text-decoration: none;
     color: black;
     text-align: center;
-    font-size: calc(9px + 0.8vw);
+    font-size: calc(9px + 1vw);
     line-height: calc(2em + 0.8vw);
     width: 100%;
 }
@@ -143,6 +133,10 @@ body{
     width: 20vw;
 }
 
+.mainImage:hover{
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
 .sideImageDiv{
     display: flex;
     flex-direction: column;
@@ -155,10 +149,15 @@ body{
 .sideImage{
     margin: 5px 5vw 5px 5vw;
     width: 7vw;
+    transition: 1s;
 }   
 
 .sideImage:hover {
     width: 13vw;
+}
+
+.sideImage:hover ~ .sideImage{
+    width: 7vw;
 }
 
 .buyingInfo{
@@ -166,13 +165,9 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 35%;
+    width: 100%;
     margin-left: 1%;
 }
-
-/* .buyingInfo h1{
-    font-size: 3vw;
-} */
 
 .price{
     display: flex;
@@ -181,7 +176,7 @@ body{
     height: 5vw;
     justify-content: center;
     align-items: center;
-    font-size: 150%;
+    font-size: 180%;
     font-weight: 600;
     color: #FF424E;
 }
@@ -195,6 +190,10 @@ body{
     font-size: 2vw;
 }
 
+.buttonAddCart:hover{
+    background-color: red;
+}
+
 .bookInfo{
     margin: 1% 20% 2vw 20%;
 }
@@ -206,7 +205,7 @@ body{
 .bookDescription{
     font-size: 120%;
     padding: 0 1vw 1vw 1vw;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 @media (max-width: 960px) {
@@ -214,28 +213,44 @@ body{
         flex-direction: column;
         align-items: center;
     }
+    
     .mainImageDiv{
         justify-content: center;
     }
+
     .mainImage{
         width: 100%;
     }
+
     .sideImageDiv{
         flex-direction: row;
         border-right: none;
     }
+
     .sideImage{
         width: 10vw;
     }   
+
     .sideImage:hover {
-        width: 20vw;
+        width: 40vw;
+    }
+
+    .price{
+        width: 150%;
+        height: 15vw;
     }
     .buyingInfo{
         width: fit-content;
     }
+
     .bookInfo{
         margin: 1% 10% 2vw 10%;
         width: 80%;
+    }
+
+    .buttonAddCart{
+        width: 70%;
+        font-size: 5vw;
     }
 }
 
@@ -282,6 +297,12 @@ footer{
     flex-grow: 4;
     align-items: center;
     justify-content: center;
+}
+
+.footerAnchor:hover{
+    background-color: white;
+    color: black;
+    transition: 0.2s;
 }
 
 .copyright{
