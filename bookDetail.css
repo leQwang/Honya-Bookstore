@@ -1,3 +1,11 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Le Duy Quang
+ID: 3912105
+Acknowledgement: RMIT lecture slide */
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Sacramento&display=swap');
 
 body{
@@ -183,7 +191,7 @@ body{
 
 .buttonAddCart{
     margin: 2vw;
-    width: 50%;
+    width: 70%;
 
     background-color: #FF424E;
     color: black;

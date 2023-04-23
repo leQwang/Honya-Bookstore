@@ -1,3 +1,11 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Le Duy Quang
+ID: 3912105
+Acknowledgement: RMIT lecture slide */
+
 body{
     margin: 0 0;
     position: relative;
@@ -133,6 +141,10 @@ body{
 .buttonDisplay{
     display: flex;
     justify-content: center;
+}
+
+.buttonDisplay button{
+    margin: 0 5px;
 }
 
 

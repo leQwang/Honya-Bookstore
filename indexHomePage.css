@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Le Duy Quang
+ID: 3912105
+Acknowledgement: RMIT lecture slide */
 
 body{
     margin: 0 0;
@@ -156,6 +162,12 @@ body{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 130%;
+    transition: 0.5s;
+}
+
+.bookChildWidth:hover{
+    width: 97.5%;
+    padding: 0 1.25%;
 }
 
 .video{
